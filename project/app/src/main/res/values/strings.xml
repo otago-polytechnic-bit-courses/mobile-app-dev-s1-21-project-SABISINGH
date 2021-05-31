@@ -1,8 +1,21 @@
 <resources>
-    <string name="app_name">Project</string>
+    <string name="app_name">Travel Earth</string>
     <string name="phrases">Phrases</string>
     <string name="settings">Settings</string>
     <string name="quiz">Quiz</string>
     <string name="translator">Translator</string>
     <string name="home">Home</string>
+    <string name="maps">Maps</string>
+    <string name="map">map</string>
+    <string name="key_phrases">key phrases</string>
+    <string name="pending">pending</string>
+    <string name="setting">settings</string>
+    <string name="Quiz">quiz</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="change_map_style">Change Map Style</string>
+    <string name="error_connection">Connection Error :(</string>
+    <string name="loading_data">Loading…</string>
+    <string name="flag">flag</string>
+    <string name="name">Name</string>
+    <string name="capital">Capital</string>
 </resources>
