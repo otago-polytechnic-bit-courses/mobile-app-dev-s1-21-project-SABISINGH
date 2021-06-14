@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="op.mobile.app.dev.singhs2.travelling">
-    <!--
-         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
-         Google Maps Android API v2, but you must specify either coarse or fine
-         location permissions for the "MyLocation" functionality.
-    -->
+
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -16,11 +12,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Project">
-        <activity android:name=".ResultsDisplayActivity"></activity>
-        <activity android:name=".QuizQuestionsActivity" />
+        <activity android:name=".ResultsDisplayActivity" />
         <activity
             android:name=".quizActivity.ArgentinaQuizActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="fullSensor" />
         <activity android:name=".WorkInProgress" />
         <activity
             android:name=".allCountryActivities.SouthAfricaActivity"
@@ -60,15 +55,7 @@
             android:label="@string/argentina_key_phrases" />
         <activity android:name=".TranslatorActivity" />
         <activity android:name=".PhrasesActivity" />
-        <activity android:name=".QuizActivity" />
-        <!--
-             The API key for Google Maps-based APIs is defined as a string resource.
-             (See the file "res/values/google_maps_api.xml").
-             Note that the API key is linked to the encryption key used to sign the APK.
-             You need a different API key for each encryption key, including the release key that is used to
-             sign the APK for publishing.
-             You can define the keys for the debug and release targets in src/debug/ and src/release/.
-        -->
+
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyBOm2SY3mY9Awm8qmxoIMWT236M3bGZB8k" />
@@ -76,7 +63,7 @@
         <activity
             android:name=".ui.maps.MapsActivity"
             android:label="@string/title_activity_maps"
-            android:screenOrientation="portrait"
+            android:screenOrientation="fullSensor"
             android:theme="@style/NoActionBarTheme"
             android:windowSoftInputMode="adjustResize" />
         <activity

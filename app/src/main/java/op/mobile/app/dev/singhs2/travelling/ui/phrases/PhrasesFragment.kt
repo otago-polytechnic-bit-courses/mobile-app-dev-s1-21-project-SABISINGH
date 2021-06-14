@@ -9,12 +9,12 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import op.mobile.app.dev.singhs2.travelling.R
-import op.mobile.app.dev.singhs2.travelling.WorkInProgress
 import op.mobile.app.dev.singhs2.travelling.allCountryActivities.*
 import op.mobile.app.dev.singhs2.travelling.databinding.PhrasesFragmentBinding
 import op.mobile.app.dev.singhs2.travelling.service.ServiceAdapter
+import op.mobile.app.dev.singhs2.travelling.ui.quiz.IOnClickListener
 
-class PhrasesFragment : Fragment(), ServiceAdapter.OnCountryClickListener {
+class PhrasesFragment : Fragment(), IOnClickListener {
     private lateinit var viewModel: PhrasesViewModel
 
     override fun onCreateView(
@@ -32,43 +32,56 @@ class PhrasesFragment : Fragment(), ServiceAdapter.OnCountryClickListener {
         return binding.root
     }
 
-    override fun onCountryClick(position: Int) {
-        if (position == 0) {
-            val intent = Intent(context, ArgentinaActivity::class.java)
-            startActivity(intent)
-        } else if (position == 1) {
-            val intent = Intent(context, AustraliaActivity::class.java)
-            startActivity(intent)
-        } else if (position == 2) {
-            val intent = Intent(context, BrazilActivity::class.java)
-            startActivity(intent)
-        } else if (position == 3) {
-            val intent = Intent(context, CanadaActivity::class.java)
-            startActivity(intent)
-        } else if (position == 4) {
-            val intent = Intent(context, ChinaActivity::class.java)
-            startActivity(intent)
-        } else if (position == 5) {
-            val intent = Intent(context, FranceActivity::class.java)
-            startActivity(intent)
-        } else if (position == 6) {
-            val intent = Intent(context, GermanyActivity::class.java)
-            startActivity(intent)
-        } else if (position == 7) {
-            val intent = Intent(context, IndiaActivity::class.java)
-            startActivity(intent)
-        } else if (position == 8) {
-            val intent = Intent(context, MexicoActivity::class.java)
-            startActivity(intent)
-        } else if (position == 9) {
-            val intent = Intent(context, NewZealandActivity::class.java)
-            startActivity(intent)
-        } else if (position == 10) {
-            val intent = Intent(context, NigeriaActivity::class.java)
-            startActivity(intent)
-        } else if (position == 11) {
-            val intent = Intent(context, SouthAfricaActivity::class.java)
-            startActivity(intent)
+    override fun onItemClick(position: Int) {
+        when (position) {
+            0 -> {
+                val intent = Intent(context, ArgentinaActivity::class.java)
+                startActivity(intent)
+            }
+            1 -> {
+                val intent = Intent(context, AustraliaActivity::class.java)
+                startActivity(intent)
+            }
+            2 -> {
+                val intent = Intent(context, BrazilActivity::class.java)
+                startActivity(intent)
+            }
+            3 -> {
+                val intent = Intent(context, CanadaActivity::class.java)
+                startActivity(intent)
+            }
+            4 -> {
+                val intent = Intent(context, ChinaActivity::class.java)
+                startActivity(intent)
+            }
+            5 -> {
+                val intent = Intent(context, FranceActivity::class.java)
+                startActivity(intent)
+            }
+            6 -> {
+                val intent = Intent(context, GermanyActivity::class.java)
+                startActivity(intent)
+            }
+            7 -> {
+                val intent = Intent(context, IndiaActivity::class.java)
+                startActivity(intent)
+            }
+            8 -> {
+                val intent = Intent(context, MexicoActivity::class.java)
+                startActivity(intent)
+            }
+            9 -> {
+                val intent = Intent(context, NewZealandActivity::class.java)
+                startActivity(intent)
+            }
+            10 -> {
+                val intent = Intent(context, NigeriaActivity::class.java)
+                startActivity(intent)
+            }
+            11 -> {
+                val intent = Intent(context, SouthAfricaActivity::class.java)
+                startActivity(intent)
+            }
         }
     }
 }

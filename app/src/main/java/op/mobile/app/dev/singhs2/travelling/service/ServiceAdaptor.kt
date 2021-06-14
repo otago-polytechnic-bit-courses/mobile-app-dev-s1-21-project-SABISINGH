@@ -8,8 +8,10 @@ import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import op.mobile.app.dev.singhs2.travelling.databinding.RecyclerViewItemBinding
 import op.mobile.app.dev.singhs2.travelling.model.GitHubCountries
+import op.mobile.app.dev.singhs2.travelling.ui.quiz.IOnClickListener
+import op.mobile.app.dev.singhs2.travelling.ui.quiz.QuizFragment
 
-class ServiceAdapter(private val listener: OnCountryClickListener) :
+class ServiceAdapter(private val listener: IOnClickListener) :
     ListAdapter<GitHubCountries, ServiceAdapter.ServiceViewHolder>(DiffCallback) {
 
     companion object DiffCallback : DiffUtil.ItemCallback<GitHubCountries>() {
@@ -63,12 +65,8 @@ class ServiceAdapter(private val listener: OnCountryClickListener) :
         override fun onClick(p0: View?) {
             val position = adapterPosition
             if (position != RecyclerView.NO_POSITION) {
-                listener.onCountryClick(position)
+                listener.onItemClick(position)
             }
         }
-    }
-
-    interface OnCountryClickListener {
-        fun onCountryClick(position: Int)
     }
 }
