@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Viajar por la tierra</string>
+    <string name="name">Name: %1$s</string>
+    <string name="capital">Official-Language: %1$s</string>
+    <string name="error_connection">Error de conexión :(</string>
+    <string name="phrases">Frases de países</string>
+    <string name="settings">Ajustes</string>
+    <string name="quiz">Prueba</string>
+    <string name="translator">Traductor</string>
+    <string name="home">Casa</string>
+    <string name="maps">Mapas</string>
+    <string name="map">mapa</string>
+    <string name="key_phrases">frases clave</string>
+    <string name="pending">pendiente</string>
+</resources>
