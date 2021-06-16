@@ -17,7 +17,7 @@ class ResultFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         val view: View =  inflater.inflate(R.layout.result_fragment, container, false)
 
         val tvScore: TextView = view.findViewById(R.id.tv_score)
@@ -31,12 +31,8 @@ class ResultFragment : Fragment() {
         btnFinish.setOnClickListener {
             findNavController().navigate(ResultFragmentDirections.actionResultFragmentToHomeFragment())
         }
+
         return view
     }
-//        override fun onActivityCreated(savedInstanceState: Bundle?) {
-//        super.onActivityCreated(savedInstanceState)
-//        viewModel = ViewModelProvider(this).get(ResultViewModel::class.java)
-//        // TODO: Use the ViewModel
-//}
 }
 

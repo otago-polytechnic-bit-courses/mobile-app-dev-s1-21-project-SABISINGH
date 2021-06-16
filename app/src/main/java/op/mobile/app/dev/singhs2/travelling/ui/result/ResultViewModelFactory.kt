@@ -4,10 +4,10 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 
 @Suppress("UNCHECKED_CAST")
-class ResultsViewModelFactory(private val finalScore: Int) : ViewModelProvider.Factory {
+class ResultsViewModelFactory(private val score: Int) : ViewModelProvider.Factory {
     override fun <T : ViewModel?> create(modelClass: Class<T>): T {
         if (modelClass.isAssignableFrom(ResultViewModel::class.java))
-            return ResultViewModel(finalScore) as T
+            return ResultViewModel(score) as T
         throw IllegalArgumentException("Unknown ViewModel class")
     }
 }

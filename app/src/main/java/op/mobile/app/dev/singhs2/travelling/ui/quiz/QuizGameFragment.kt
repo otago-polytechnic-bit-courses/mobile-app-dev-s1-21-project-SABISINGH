@@ -82,10 +82,10 @@ class QuizGameFragment: Fragment() {
                         binding.radioBtnGroupAnswers.clearCheck()
                         binding.invalidateAll()
                     } else {
-                        // Finish the game and go to the
-                        // results page. Use the lab code for this
-                        val action = QuizGameFragmentDirections.actionQuizGameFragmentToResultFragment()
-                        action.score = viewModel.score
+                        val action = QuizGameFragmentDirections
+                            .actionQuizGameFragmentToResultFragment(
+                                viewModel.score.value!!
+                            )
                         findNavController().navigate(action)
                     }
                 } else {
