@@ -17,7 +17,6 @@ import op.mobile.app.dev.singhs2.travelling.R
 import op.mobile.app.dev.singhs2.travelling.R.id.*
 
 class SettingsFragment : Fragment() {
-//    private lateinit var viewModel: SettingsViewModel
     private lateinit var sharedPreference: SharedPreferences
     private lateinit var themeChangeSwitch: SwitchCompat
 
@@ -26,8 +25,8 @@ class SettingsFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         val view = inflater.inflate(R.layout.settings_fragment, container, false)
-        sharedPreference = activity?.getPreferences(Context.MODE_PRIVATE)!!
-        themeChangeSwitch = view.findViewById(R.id.toggleSwitch)
+        sharedPreference = context?.getSharedPreferences("darkMode",  Context.MODE_PRIVATE)!!
+        themeChangeSwitch = view.findViewById(toggleSwitch)
         val isDarkMode: Boolean = sharedPreference.getBoolean(getString(R.string.switch_dark_mode), false)
         if (isDarkMode) {
             (activity as AppCompatActivity?)!!.delegate.localNightMode =
@@ -53,7 +52,6 @@ class SettingsFragment : Fragment() {
         val github = view?.findViewById<Button>(github)
         val privacyPolicy = view?.findViewById<Button>(privacyPolicy)
         val termsAndConditions = view?.findViewById<Button>(termsAndConditions)
-        val aboutUs = view?.findViewById<Button>(aboutUs)
 
         facebook?.setOnClickListener {
             val intent = Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.settings_facebook_link)))
@@ -64,15 +62,11 @@ class SettingsFragment : Fragment() {
             startActivity(intent)
         }
         privacyPolicy?.setOnClickListener {
-            val intent = Intent(Intent.ACTION_VIEW, Uri.parse("file:///D:/IN721%20-%20Mobile%20Application%20Development/project/feature-Settings/Privacy%20policy.html"))
+            val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://otago-polytechnic-bit-courses.github.io/mobile-app-dev-s1-21-project-SABISINGH/"))
             startActivity(intent)
         }
         termsAndConditions?.setOnClickListener {
-            val intent = Intent(Intent.ACTION_VIEW, Uri.parse("file:///D:/IN721%20-%20Mobile%20Application%20Development/project/feature-Settings/Terms%20&%20Conditions.html"))
-            startActivity(intent)
-        }
-        aboutUs?.setOnClickListener {
-            val intent = Intent(Intent.ACTION_VIEW, Uri.parse("file:///C:/Users/angel/OneDrive/Desktop/project/feature-Settings/About%20Us.html"))
+            val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://www.websitepolicies.com/policies/view/qBaLNp64"))
             startActivity(intent)
         }
         return view

@@ -8,6 +8,8 @@ import android.widget.Toast
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.NavHostFragment
+import androidx.navigation.fragment.findNavController
 import op.mobile.app.dev.singhs2.travelling.R
 import op.mobile.app.dev.singhs2.travelling.databinding.FragmentQuizGameBinding
 
@@ -82,6 +84,9 @@ class QuizGameFragment: Fragment() {
                     } else {
                         // Finish the game and go to the
                         // results page. Use the lab code for this
+                        val action = QuizGameFragmentDirections.actionQuizGameFragmentToResultFragment()
+                        action.score = viewModel.score
+                        findNavController().navigate(action)
                     }
                 } else {
                     Toast.makeText(
@@ -91,7 +96,6 @@ class QuizGameFragment: Fragment() {
                     ).show()
                 }
             }
-
             return root
         }
     }

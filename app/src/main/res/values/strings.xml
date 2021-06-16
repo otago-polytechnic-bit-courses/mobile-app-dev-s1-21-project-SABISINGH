@@ -18,12 +18,11 @@
     <string name="flag">flag</string>
     <string name="name">Name: %1$s</string>
     <string name="capital">Official-Language: %1$s</string>
-    <string name="translator_text">Welcome to Travel Earth Translator. You will be able to translate your text to whatever language you want to translate to. Press the button below to have some translation fun.</string>
-    <string name="translate">translate</string>
+     <string name="translate">translate</string>
     <string name="Start">Start</string>
     <string name="please_enter_your_text_here">Please enter your text here</string>
     <string name="translation_result">Translation result</string>
-    <string name="translate_text">Translate</string>
+    <string name="translate_text">Translator</string>
     <string name="speech">Speech</string>
 
     <!--    Spinner for language translation-->
@@ -136,7 +135,7 @@
     <string name="Germany_phrase_3">Phrase 3: Ich glaub mein Schwein pfeift - I think my pig whistles</string>
     <string name="Germany_phrase_3_meaning">Meaning: Germans use the phrase when they cannot believe something to be true or to express that they’re really surprised.</string>
     <string name="Germany_phrase_4">Phrase 4: Fix und fertig sein -  To be fixed and finished</string>
-    <string name="Germany_phrase_4_meaning">TMeaning: his phrase is commonly used to express that you are completely exhausted.</string>
+    <string name="Germany_phrase_4_meaning">Meaning: his phrase is commonly used to express that you are completely exhausted.</string>
     <string name="Germany_phrase_5">Phrase 5: Jemandem auf den Keks gehen - To go on someone’s cookie</string>
     <string name="Germany_phrase_5_meaning">Meaning: It is used to express that someone is getting on our nerves.</string>
     <string name="Germany_phrase_6">Phrase 6: Die Nase voll haben - To have the nose full</string>
@@ -232,7 +231,6 @@
 
     <string name="phrase">Phrase</string>
     <string name="explanation">Explanation: </string>
-    <string name="label_1">Night Mode / Day mode</string>
     <string name="about_us">About us</string>
     <string name="privacy_policy">Privacy policy</string>
     <string name="terms_amp_conditions"><![CDATA[Terms & Conditions]]></string>
@@ -247,9 +245,11 @@
     <string name="backpress_toast_confirmation">Please press twice if you want to exit the app</string>
     <string name="switch_dark_mode">dark_mode</string>
     <string name="maps_toast_error_message">Something went wrong !!</string>
-    <string name="settings_facebook_link">https://www.facebook.com/</string>
-    <string name="settings_github_link">https://www.github.com/</string>
+    <string name="settings_facebook_link">https://www.facebook.com/sabibhangu/?viewas=100000686899395</string>
+    <string name="settings_github_link">https://github.com/SABISINGH</string>
     <string name="quiz_welcome">Welcome</string>
     <string name="quiz_please_enter_your_name">Please enter your name.</string>
     <string name="quiz_name">Name</string>
+    <string name="translator_text">translator_text</string>
+    <string name="score">You Scored: %1$s</string>
 </resources>

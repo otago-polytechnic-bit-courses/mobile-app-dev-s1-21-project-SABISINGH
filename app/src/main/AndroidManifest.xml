@@ -12,11 +12,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Project">
-        <activity android:name=".ResultsDisplayActivity" />
-        <activity
-            android:name=".quizActivity.ArgentinaQuizActivity"
-            android:screenOrientation="fullSensor" />
-        <activity android:name=".WorkInProgress" />
+
         <activity
             android:name=".allCountryActivities.SouthAfricaActivity"
             android:label="@string/southafrica_key_phrases" />
@@ -53,8 +49,9 @@
         <activity
             android:name=".allCountryActivities.ArgentinaActivity"
             android:label="@string/argentina_key_phrases" />
-        <activity android:name=".TranslatorActivity" />
-        <activity android:name=".PhrasesActivity" />
+
+        <activity android:name=".ui.translation.TranslatorActivity" />
+
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"

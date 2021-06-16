@@ -9,7 +9,6 @@ import androidx.recyclerview.widget.RecyclerView
 import op.mobile.app.dev.singhs2.travelling.databinding.RecyclerViewItemBinding
 import op.mobile.app.dev.singhs2.travelling.model.GitHubCountries
 import op.mobile.app.dev.singhs2.travelling.ui.quiz.IOnClickListener
-import op.mobile.app.dev.singhs2.travelling.ui.quiz.QuizFragment
 
 class ServiceAdapter(private val listener: IOnClickListener) :
     ListAdapter<GitHubCountries, ServiceAdapter.ServiceViewHolder>(DiffCallback) {

@@ -31,6 +31,7 @@ class QuizFragment : Fragment(), IOnClickListener {
         return binding.root
     }
 
+
     override fun onItemClick(position: Int) {
         val item = binding.githubCountriesViewModel!!.response.value!![position]
         val action =

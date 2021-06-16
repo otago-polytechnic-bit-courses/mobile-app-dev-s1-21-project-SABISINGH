@@ -8,7 +8,6 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import op.mobile.app.dev.singhs2.travelling.R
-import op.mobile.app.dev.singhs2.travelling.TranslatorActivity
 
 class TranslationFragment : Fragment() {
 
@@ -27,6 +26,4 @@ class TranslationFragment : Fragment() {
         }
         return view
     }
-
-
 }

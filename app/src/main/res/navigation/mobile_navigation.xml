@@ -45,6 +45,22 @@
         <argument
             android:name="country"
             app:argType="op.mobile.app.dev.singhs2.travelling.model.GitHubCountries" />
+        <action
+            android:id="@+id/action_quiz_game_fragment_to_result_fragment"
+            app:destination="@id/navigation_result" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_result"
+        android:name="op.mobile.app.dev.singhs2.travelling.ui.result.ResultFragment"
+        android:label="result"
+        tools:layout="@layout/result_fragment" >
+         <action
+            android:id="@+id/action_result_fragment_to_home_fragment"
+            app:destination="@id/navigation_home" />
+        <argument
+            android:name="score"
+            android:defaultValue="0"
+            app:argType="integer" />
     </fragment>
     <fragment
         android:id="@+id/navigation_translation"
@@ -56,5 +72,4 @@
         android:name="op.mobile.app.dev.singhs2.travelling.ui.settings.SettingsFragment"
         android:label="@string/settings"
         tools:layout="@layout/settings_fragment" />
-
 </navigation>

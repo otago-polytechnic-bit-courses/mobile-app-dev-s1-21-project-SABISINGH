@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".ui.settings.SettingsFragment"
     android:layout_marginTop="@dimen/margin_60">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
 
     <androidx.appcompat.widget.SwitchCompat
         android:id="@+id/toggleSwitch"
@@ -31,7 +36,7 @@
         android:drawableLeft="@drawable/ic_facebook"
         android:gravity="center"
         android:text="@string/facebook"
-        android:textSize="@dimen/size_24" />
+        android:textSize="@dimen/size_22" />
 
     <Button
         android:id="@+id/github"
@@ -44,7 +49,7 @@
         android:drawableLeft="@drawable/ic_github"
         android:gravity="center"
         android:text="@string/github"
-        android:textSize="@dimen/size_24" />
+        android:textSize="@dimen/size_22" />
 
     <Button
         android:id="@+id/privacyPolicy"
@@ -56,7 +61,7 @@
         android:layout_marginBottom="@dimen/margin_16"
         android:gravity="center"
         android:text="@string/privacy_policy"
-        android:textSize="@dimen/size_24" />
+        android:textSize="@dimen/size_22" />
 
     <Button
         android:id="@+id/termsAndConditions"
@@ -68,18 +73,6 @@
         android:layout_marginBottom="@dimen/margin_16"
         android:gravity="center"
         android:text="@string/terms_amp_conditions"
-        android:textSize="@dimen/size_24" />
-
-    <Button
-        android:id="@+id/aboutUs"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/margin_32"
-        android:layout_marginTop="@dimen/margin_16"
-        android:layout_marginEnd="@dimen/margin_32"
-        android:layout_marginBottom="@dimen/margin_16"
-        android:drawableLeft="@drawable/ic_user"
-        android:gravity="center"
-        android:text="@string/about_us"
-        android:textSize="@dimen/size_24" />
-</LinearLayout>
+        android:textSize="@dimen/size_22" />
+    </LinearLayout>
+</ScrollView>
