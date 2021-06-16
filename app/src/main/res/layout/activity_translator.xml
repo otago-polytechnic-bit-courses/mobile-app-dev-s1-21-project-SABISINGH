@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/black"
+    android:orientation="vertical"
+    tools:context=".ui.translation.TranslatorActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_320"
+        android:hint="@string/please_enter_your_text_here" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_320"
+        android:hint="@string/translation_result" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/translation_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_8" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/margin_8"
+            android:layout_weight="1"
+            android:text="@string/translate_text"
+            android:textSize="@dimen/size_22" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/margin_5"
+            android:layout_weight="1"
+            android:text="@string/speech"
+            android:textSize="@dimen/size_22" />
+    </LinearLayout>
+
+</LinearLayout>
