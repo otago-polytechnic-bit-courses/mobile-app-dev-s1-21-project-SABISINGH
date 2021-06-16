@@ -39,8 +39,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:textSize="20sp"
-        android:paddingTop="@dimen/margin_8"
-        tools:text="Your Score is 5 out of 6" />
+        android:paddingTop="@dimen/margin_8" />
 
     <Button
         android:id="@+id/btn_finish"
