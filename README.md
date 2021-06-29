@@ -101,10 +101,6 @@
 
 <h3>Commented code is documented using KDoc & generated to Markdown using Dokka.</h3>
 <p>
-
-
-### All Types
-
 | Name | Summary |
 |---|---|
 | [op.mobile.app.dev.singhs2.travelling.allCountryActivities.ArgentinaActivity](../op.mobile.app.dev.singhs2.travelling.all-country-activities/-argentina-activity/index.md) | Argentina Activity. Declaring shared preferences for night mode and checking the theme style checked. Initialize data. |<br><br>
