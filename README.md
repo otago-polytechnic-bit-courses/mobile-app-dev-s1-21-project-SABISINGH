@@ -180,6 +180,9 @@
 | [op.mobile.app.dev.singhs2.travelling.roomDatabase.UserViewModel](../op.mobile.app.dev.singhs2.travelling.room-database/-user-view-model/index.md) | UserViewModel - To access all our queries from Dao. To provide data to the UI and survive configuration changes. It acts as a communication center between the Repository and the UI. |<br><br>
 | [op.mobile.app.dev.singhs2.travelling.model.Yandex](../op.mobile.app.dev.singhs2.travelling.model/-yandex/index.md) |  |<br><br>
 | [op.mobile.app.dev.singhs2.travelling.languageApi.YandexLangCode](../op.mobile.app.dev.singhs2.travelling.language-api/-yandex-lang-code/index.md) | YandexLangCode - used for translator. Language is translated from english to each specific country language using Yandex. |</p><br><br>
+
+<h2>20 UI tests which verify that my application is functioning correctly.</h2>
+<p><img src="/images/UserInterfaceTests.jpg" alt="UserInterfaceTests"><br>
 <h2>Resources</h2>
 <h4><a href="https://www.flaticon.com/free-icon/travelling_1748778?term=travelling&page=2&position=47&page=2&position=47&related_id=1748778&origin=search">Flaticon - For icons</a></h4>
 <h4>For Free Images - <a href="https://www.pexels.com">Pexels</a> and <a href="https://pixabay.com">Pixabay</a></h4>
